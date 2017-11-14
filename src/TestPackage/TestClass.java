@@ -1,19 +1,16 @@
 package TestPackage;
 
+import javax.swing.JFrame;
+
 public class TestClass {
 
-	public static void main(String[] args) {
-		
-		int a = 1;
-		int b = 20;
-		
-		printSum(a,b);
-
+	public static void main(String[] args){
+	    Gui splash = new Gui();
+	    splash.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    splash.setSize(300,200);
+	    splash.setVisible(true);
 	}
 	
-	public static void printSum(int a, int b){
-		
-		System.out.println("The sum is " + (a + b) );
-	}
-
+	
 }
+
